@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SkyGlass Premium Weather</title>
+    <link rel="stylesheet" href="style2.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="container">
+        <h1>SkyGlass</h1>
+        <div id="search">
+            <input type="text" id="cityInput" placeholder="Search city...">
+            <button id="searchBtn">Search</button>
+        </div>
+
+        <div id="weather-info">
+            <div class="location" id="cityName">Tellāpur, India</div>
+            <div class="date" id="currentDate">Friday, January 2, 2026</div>
+            <div class="temperature" id="mainTemp">15°C</div>
+            <div class="description" id="weatherDesc">Partly Cloudy</div>
+        </div>
+
+        <div class="weather-details">
+            <div class="detail-item">
+                <span class="label">Feels Like</span>
+                <span class="value" id="feelsLike">14°C</span>
+            </div>
+            <div class="detail-item">
+                <span class="label">Humidity</span>
+                <span class="value" id="humidity">85%</span>
+            </div>
+            <div class="detail-item">
+                <span class="label">Wind Speed</span>
+                <span class="value" id="windSpeed">8.7 km/h</span>
+            </div>
+            <div class="detail-item">
+                <span class="label">Pressure</span>
+                <span class="value" id="pressure">999 hPa</span>
+            </div>
+        </div>
+
+        <span class="section-title">24-Hour Forecast</span>
+        <div class="horizontal-scroll" id="hourlyForecast"></div>
+
+        <span class="section-title">7-Day Forecast</span>
+        <div class="horizontal-scroll" id="dailyForecast"></div>
+    </div>
+    <script src="script1.js"></script>
+</body>
+</html>
